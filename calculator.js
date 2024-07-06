@@ -9,10 +9,6 @@ let count = 0;
 let operatorChosen;
 let sum = (num1 + num2);
 
-const addOp = () => {
-  console.log (num1 + num2);
-};
-
 console.log('Enter first number: ');
 
 inputNums.on('line', (input) => {
