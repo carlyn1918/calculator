@@ -36,27 +36,38 @@ inputNums.on('line', (input) => {
             addOp();
           }  else if (count === 3 && operatorChosen === '2'){
             subOp();
-          }
+          } else if (count === 3 && operatorChosen === 2){
+                subOp();
+            } else if (count === 3 && operatorChosen === 3){
+                mulOp();
+            } else if (count === 3 && operatorChosen === 4){
+                divOp();
+               
+            } 
     
     inputNums.close();
   } 
   
   
-  else if (operatorChosen === 2){
-    subOp();
-  } else if (operatorChosen === 3){
-    mulOp();
-  } else if (operatorChosen === 4){
-    divOp();
+//   else if (operatorChosen === 2){
+//     subOp();
+//   } else if (operatorChosen === 3){
+//     mulOp();
+//   } else if (operatorChosen === 4){
+//     divOp();
    
-  } else {
+//   } 
+
+else {
     console.log('Invalid input: run the script again!');
   }
 });
 
 
 
-
+const addOp = () => {
+    console.log(num1 + num2);
+}
 
 
 const subOp = () => {
