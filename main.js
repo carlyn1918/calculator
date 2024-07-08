@@ -16,7 +16,7 @@ inputNums.on('line', (input) => {
     ops1 = input.trim();
     console.log(`You want to calculate this ${ops1}`);
     count++;
-    inputNums.close();
+    console.log('testing to skip the prompt for enter key');
     } else if (count === 1) {
         let results = eval(ops1);
         console.log(`the results is ${results}`);
