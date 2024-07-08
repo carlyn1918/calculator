@@ -9,6 +9,7 @@ let A1 = 4;
 let B1 = 3;
 let count = 0;
 let results = eval(ops1);
+let choice = 0; 
 
 console.log('Enter what you wanted to compute here (Example 1+1*2) ');
 
@@ -20,12 +21,14 @@ inputNums.on('line', (input) => {
     console.log('testing to skip the prompt for enter key');
     let results = eval(ops1);
     console.log(`the results is ${results}`);
-    } else if (count === 1) {
+    console.log(`Do you want to try again?`);
+    choice = input.trim();
+    } else if (count === '2') {
         
-        console.log(`end`);
-
+        console.log(`you press ${choice}`);
         
-    }
+        
+    } 
 }); // this code works - shows trimed inputs
-console.log (count); //shows that count is still 0 hmm
+
 
