@@ -16,6 +16,7 @@ inputNums.on('line', (input) => {
     ops1 = input.trim();
     console.log(`You want to calculate this ${ops1}`);
     count++;
+    inputNums.close();
     } else if (count === 1) {
         let results = eval(ops1);
         console.log(`the results is ${results}`);
@@ -23,4 +24,5 @@ inputNums.on('line', (input) => {
         
     }
 }); // this code works - shows trimed inputs
-console.log (count);
+console.log (count); //shows that count is still 0 hmm
+
