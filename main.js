@@ -8,6 +8,7 @@ let ops1 = '';
 let A1 = 4;
 let B1 = 3;
 let count = 0;
+let results = eval(ops1);
 
 console.log('Enter what you wanted to compute here (Example 1+1*2) ');
 
@@ -17,9 +18,11 @@ inputNums.on('line', (input) => {
     console.log(`You want to calculate this ${ops1}`);
     count++;
     console.log('testing to skip the prompt for enter key');
+    let results = eval(ops1);
+    console.log(`the results is ${results}`);
     } else if (count === 1) {
-        let results = eval(ops1);
-        console.log(`the results is ${results}`);
+        
+        console.log(`end`);
 
         
     }
