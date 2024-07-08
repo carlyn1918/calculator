@@ -12,6 +12,15 @@ let count = 0;
 console.log('Enter what you wanted to compute here (Example 1+1*2) ');
 
 inputNums.on('line', (input) => {
+    if (count === 0) {
     ops1 = input.trim();
     console.log(`You want to calculate this ${ops1}`);
+    count++;
+    } else if (count === 1) {
+        let results = eval(ops1);
+        console.log(`the results is ${results}`);
+
+        
+    }
 }); // this code works - shows trimed inputs
+console.log (count);
