@@ -7,6 +7,7 @@ const inputNums = readline.createInterface({
 let ops1 = '';
 let A1 = 4;
 let B1 = 3;
+let count = 0;
 
 console.log('Enter what you wanted to compute here (Example 1+1*2) ');
 
