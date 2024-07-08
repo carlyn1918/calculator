@@ -36,14 +36,11 @@ inputNums.on('line', (input) => {
             addOp();
           }  else if (count === 3 && operatorChosen === '2'){
             subOp();
-          } else if (count === 3 && operatorChosen === 2){
-                subOp();
-            } else if (count === 3 && operatorChosen === 3){
+          }  else if (count === 3 && operatorChosen === '3'){
                 mulOp();
-            } else if (count === 3 && operatorChosen === 4){
+          } else if (count === 3 && operatorChosen === '4'){
                 divOp();
-               
-            } 
+        } 
     
     inputNums.close();
   } 
