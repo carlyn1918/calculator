@@ -21,11 +21,12 @@ inputNums.on('line', (input) => {
     console.log('testing to skip the prompt for enter key');
     let results = eval(ops1);
     console.log(`the results is ${results}`);
-    console.log(`Do you want to try again?`);
-    choice = input.trim();
-    } else if (count === '2') {
-        
+    console.log(`Do you want to try again? Press 1 to try again`);
+    choice = parseFloat(input.trim());
+    } else if (count === 1) {
+        choice = parseFloat(input.trim());
         console.log(`you press ${choice}`);
+        count = 0;
         
         
     } 
