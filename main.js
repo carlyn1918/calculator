@@ -22,7 +22,7 @@ inputNums.on('line', (input) => {
     count++;
     let results = eval(ops1);
     console.log(`the results is ${results}`);
-    console.log(`Do you want to try again? Press 1 to try again`);
+    console.log(`Press 1 then enter to try again, then type the problem below: `);
     
 
 
@@ -36,6 +36,7 @@ inputNums.on('line', (input) => {
 
         if ( choice !== 1 ){
             console.log('Thank you for using advance Calcu');
+            inputNums.close();
           };
      
 
