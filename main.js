@@ -25,10 +25,13 @@ inputNums.on('line', (input) => {
     choice = parseFloat(input.trim());
     } else if (count === 1) {
         choice = parseFloat(input.trim());
-        console.log(`you press ${choice}`);
+        console.log('Enter what you wanted to compute here (Example 1+1*2) ');
         count = 0;
         
         
+    } else if (count === 1 && choice > 1){
+        console.log('ending the scripts!');
+        inputNums.close();
     } 
 }); // this code works - shows trimed inputs
 
