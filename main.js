@@ -30,8 +30,8 @@ inputNums.on('line', (input) => {
         count = 0;
     
 
-    if ( choice === 2 ){
-        console.log('it worked its number 2 - choice');
+    if ( choice !== 1 ){
+        console.log('Thank you for using advance Calcu');
       };
     }
         
